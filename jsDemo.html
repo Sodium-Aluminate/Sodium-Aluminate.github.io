@@ -5,7 +5,12 @@
 
     <body>
         <script language="JavaScript">
-            document.write(prompt ("input something..."))
+            var input = prompt ("input something...")
+            if(parseInt(input)==NaN){
+                document.write(input)
+            }else{
+                document.write(input*2)
+            }
         </script>
     </body>
 </html>
